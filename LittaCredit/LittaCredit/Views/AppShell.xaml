@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:LittaCredit.Views"
+       x:Class="LittaCredit.Views.AppShell">
+
+    <ShellItem>
+        <ShellSection Title="Loan Page">
+            <ShellContent>
+                <views:LoanPage/>
+            </ShellContent>
+            
+            <ShellContent>
+                <views:LoanPage/>
+            </ShellContent>
+            
+            <ShellContent>
+                <views:ProfilePage/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+</Shell>

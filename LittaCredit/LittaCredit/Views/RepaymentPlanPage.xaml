@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LittaCredit.Views.RepaymentPlanPage"
+             Title="Repayment plan">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="CornerRadius" Value="8"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0"
+                         BackgroundColor="Green">
+                <Image/>
+                <Label Text="Choose a repayment plan"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       Margin="50"
+                       FontSize="20"
+                       TextColor="White"/>
+            </StackLayout>
+
+            <Picker Grid.Row="1"
+                    Margin="20"
+                    Title="Choose plan">
+                <Picker.ItemsSource>
+
+                </Picker.ItemsSource>
+            </Picker>
+
+            <StackLayout Grid.Row="2">
+                <Label Text="Option details"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <Button Grid.Row="3"
+                    Margin="10"
+                    Text="Confirm"
+                    BackgroundColor="Green"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
